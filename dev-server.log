@@ -1,0 +1,82 @@
+
+> insta-share@1.0.0 dev
+> vite --port 5199 --strictPort
+
+
+  [32m[1mVITE[22m v8.2.2[39m  [2mready in [0m[1m269[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5199[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m4:56:37 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mdependency optimized: [33mreact-icons/ai[32m[39m
+[2m4:57:19 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mpublic/__test.html[22m
+[2m4:57:26 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled error] [1mError[22m: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+
+Check the render method of `UserStories`.
+[39m > createFiberFromTypeAndProps node_modules/react-dom/cjs/react-dom-client.development.js:5021:27
+ > createFiberFromElement node_modules/react-dom/cjs/react-dom-client.development.js:5035:13
+ > createChild node_modules/react-dom/cjs/react-dom-client.development.js:6338:25
+ > reconcileChildrenArray node_modules/react-dom/cjs/react-dom-client.development.js:6670:24
+ > reconcileChildFibersImpl node_modules/react-dom/cjs/react-dom-client.development.js:6993:29
+ > node_modules/react-dom/cjs/react-dom-client.development.js:7098:32
+ > reconcileChildren node_modules/react-dom/cjs/react-dom-client.development.js:9701:12
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:12049:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+ > performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:21
+
+[2m4:57:26 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mAn error occurred in the <section> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+[2m4:58:13 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mpublic/__test.html[22m
+[2m4:58:14 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled error] [1mError[22m: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+
+Check the render method of `UserStories`.
+[39m > createFiberFromTypeAndProps node_modules/react-dom/cjs/react-dom-client.development.js:5021:27
+ > createFiberFromElement node_modules/react-dom/cjs/react-dom-client.development.js:5035:13
+ > createChild node_modules/react-dom/cjs/react-dom-client.development.js:6338:25
+ > reconcileChildrenArray node_modules/react-dom/cjs/react-dom-client.development.js:6670:24
+ > reconcileChildFibersImpl node_modules/react-dom/cjs/react-dom-client.development.js:6993:29
+ > node_modules/react-dom/cjs/react-dom-client.development.js:7098:32
+ > reconcileChildren node_modules/react-dom/cjs/react-dom-client.development.js:9701:12
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:12049:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+ > performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:21
+
+[2m4:58:14 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mAn error occurred in the <section> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+[2m4:59:33 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled rejection] [1mTypeError[22m: Cannot read properties of null (reading 'textContent')
+[39m
+[2m4:59:33 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled rejection] [1mTypeError[22m: Cannot read properties of null (reading 'click')
+[39m
+[2m4:59:39 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled rejection] [1mTypeError[22m: Illegal invocation
+[39m
+[2m4:59:39 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled rejection] [1mTypeError[22m: Illegal invocation
+[39m
+[2m4:59:47 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled rejection] [1mTypeError[22m: Cannot read properties of null (reading 'click')
+[39m
+[2m5:05:45 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/LoginForm.jsx[22m
+[2m5:06:01 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled error] [1mError[22m: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
+
+Check the render method of `UserStories`.
+[39m > createFiberFromTypeAndProps node_modules/react-dom/cjs/react-dom-client.development.js:5021:27
+ > createFiberFromElement node_modules/react-dom/cjs/react-dom-client.development.js:5035:13
+ > createChild node_modules/react-dom/cjs/react-dom-client.development.js:6338:25
+ > reconcileChildrenArray node_modules/react-dom/cjs/react-dom-client.development.js:6670:24
+ > reconcileChildFibersImpl node_modules/react-dom/cjs/react-dom-client.development.js:6993:29
+ > node_modules/react-dom/cjs/react-dom-client.development.js:7098:32
+ > reconcileChildren node_modules/react-dom/cjs/react-dom-client.development.js:9701:12
+ > beginWork node_modules/react-dom/cjs/react-dom-client.development.js:12049:12
+ > runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:871:29
+ > performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:17641:21
+
+[2m5:06:01 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mAn error occurred in the <section> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+[2m5:08:02 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/UserStories.jsx[22m

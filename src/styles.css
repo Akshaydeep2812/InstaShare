@@ -1,0 +1,26 @@
+:root {
+  --accent: #d62976;
+  --accent-gradient: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  --text-dark: #1e293b;
+  --text-medium: #475569;
+  --text-light: #94a3b8;
+  --border-color: #e2e8f0;
+  --card-bg: #ffffff;
+  --page-bg: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-color: var(--page-bg);
+  color: var(--text-dark);
+}
+
+button,
+input {
+  font-family: inherit;
+}

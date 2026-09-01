@@ -3,15 +3,14 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+
   server: {
     proxy: {
-      '/login': {
+      '/api': {
         target: 'https://apis.ccbp.in',
         changeOrigin: true,
-      },
-      '^/insta-share/(.*)': {
-        target: 'https://apis.ccbp.in',
-        changeOrigin: true,
+
+        rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },

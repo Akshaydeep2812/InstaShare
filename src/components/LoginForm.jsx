@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import Cookies from 'js-cookie'
 import { useNavigate } from 'react-router-dom'
-
 import './LoginForm.css'
 
 function LoginForm() {
@@ -11,10 +10,16 @@ function LoginForm() {
   const [showSubmitError, setShowSubmitError] = useState(false)
   const [errorMsg, setErrorMsg] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
+
   const navigate = useNavigate()
 
   const handleSubmitSuccess = (jwtToken) => {
-    Cookies.set('jwt_token', jwtToken, 30)
+    Cookies.set('jwt_token', jwtToken, {
+      expires: 30,
+      sameSite: 'lax',
+      secure: window.location.protocol === 'https:',
+    })
+
     navigate('/', { replace: true })
   }
 
@@ -25,18 +30,25 @@ function LoginForm() {
 
   const submitForm = async (event) => {
     event.preventDefault()
+
+    setShowSubmitError(false)
+    setErrorMsg('')
     setIsSubmitting(true)
 
     try {
-      const response = await axios.post('/login', {
+      const response = await axios.post('/api/login', {
         username,
         password,
       })
 
       handleSubmitSuccess(response.data.jwt_token)
     } catch (error) {
+      console.error('Login error:', error)
+
       const message =
-        error.response && error.response.data && error.response.data.error_msg
+        error.response &&
+        error.response.data &&
+        error.response.data.error_msg
           ? error.response.data.error_msg
           : 'Something went wrong. Please try again.'
 
@@ -67,6 +79,7 @@ function LoginForm() {
 
         <div className="input-field">
           <label htmlFor="username">USERNAME</label>
+
           <input
             id="username"
             type="text"
@@ -78,6 +91,7 @@ function LoginForm() {
 
         <div className="input-field">
           <label htmlFor="password">PASSWORD</label>
+
           <input
             id="password"
             type="password"
@@ -87,17 +101,24 @@ function LoginForm() {
           />
         </div>
 
-        {showSubmitError && <p className="error-message">{errorMsg}</p>}
+        {showSubmitError && (
+          <p className="error-message">*{errorMsg}</p>
+        )}
 
-        <button type="submit" className="login-button" disabled={isSubmitting}>
-          Login
+        <button
+          type="submit"
+          className="login-button"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? 'Logging in...' : 'Login'}
         </button>
 
-        <p className="login-hint">Use rahul / rahul&#64;2021 to explore</p>
+        <p className="login-hint">
+          Use rahul / rahul@2021 to explore
+        </p>
       </form>
     </main>
   )
 }
 
 export default LoginForm
-

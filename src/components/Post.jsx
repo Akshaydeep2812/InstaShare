@@ -9,7 +9,7 @@ import PostActions from './PostActions'
 const likePost = (postId, likeStatus) => {
   const jwtToken = Cookies.get('jwt_token')
   return axios.post(
-    `/insta-share/posts/${postId}/like`,
+    `/api/insta-share/posts/${postId}/like`,
     { like_status: likeStatus },
     {
       headers: { Authorization: `Bearer ${jwtToken}` },

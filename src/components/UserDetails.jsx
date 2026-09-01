@@ -8,7 +8,7 @@ import Loader from './Loader'
 import FailureView from './FailureView'
 import Profile from './Profile'
 
-const userApiUrl = '/insta-share/users/'
+const userApiUrl = '/api/insta-share/users/'
 
 function UserDetails() {
   const { id } = useParams()

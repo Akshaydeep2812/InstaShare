@@ -7,7 +7,7 @@ import Loader from './Loader'
 import FailureView from './FailureView'
 import Profile from './Profile'
 
-const myProfileApiUrl = '/insta-share/my-profile'
+const myProfileApiUrl = '/api/insta-share/my-profile'
 
 function MyProfile() {
   const [profileDetails, setProfileDetails] = useState(null)

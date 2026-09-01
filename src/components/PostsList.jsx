@@ -7,7 +7,7 @@ import Loader from './Loader'
 import FailureView from './FailureView'
 import Post from './Post'
 
-const postsApiUrl = '/insta-share/posts'
+const postsApiUrl = '/api/insta-share/posts'
 
 function PostsList({ searchInput }) {
   const [posts, setPosts] = useState([])

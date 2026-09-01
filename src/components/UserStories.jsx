@@ -11,7 +11,7 @@ import UserStoriesModal from './UserStoriesModal'
 
 const Slider = SliderModule.default !== undefined ? SliderModule.default : SliderModule
 
-const storiesApiUrl = '/insta-share/stories'
+const storiesApiUrl = '/api/insta-share/stories'
 
 const sliderSettings = {
   dots: false,
